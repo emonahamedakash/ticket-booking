@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS only -->
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Train Ticket Booking</title>
+</head>
+
+<body>
+    <div class="navbar-container">
+        <div id="navbar">
+            <div class="logo">
+                <a href="./index.html">
+                    <img src="./assets/logo.png" alt="logo">
+                </a>
+            </div>
+            <ul>
+                <li class="navlink"><a href="./index.html">
+                        Home
+                    </a>
+                </li>
+                <li class="navlink">
+                    <a href="./registration.html">
+                        Register
+                    </a>
+                </li>
+                <li class="navlink">
+                    <a href="./login.html">
+                        Login
+                    </a>
+                </li>
+                <li class="navlink">
+                    <a href="./contact.html">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="home-container" class="container">
+        <div class="search">
+            <form class="search-train">
+                <div class="inputs-container">
+                    <div class="inputs">
+                        <div class="input-field">
+                            <label>From</label>
+                            <br />
+                            <!-- <input type="text" class="p-1" placeholder="From Station"> -->
+                            <select class="p-2 w-100" name="" id="">
+                                <option>Dhaka</option>
+                                <option>Chittagong</option>
+                                <option>Khulna</option>
+                                <option>Rajshahi</option>
+                                <option>Sylhet</option>
+                            </select>
+                        </div>
+                        <div class="input-field">
+                            <label>Date of Journey</label>
+                            <br />
+
+                            <input type="date" class="w-100 p-1" placeholder="Pick Date">
+                        </div>
+                    </div>
+                    <div class="inputs">
+                        <div class="input-field">
+                            <label>To</label>
+                            <br />
+
+                            <select class="p-2 w-100" name="" id="">
+                                <option>Dhaka</option>
+                                <option>Chittagong</option>
+                                <option selected>Khulna</option>
+                                <option>Rajshahi</option>
+                                <option>Sylhet</option>
+                            </select>
+                        </div>
+                        <div class="input-field">
+                            <label>Choose class</label>
+                            <br />
+                            <select class="input-field w-100 p-2">
+                                <option value="Choose a Class">Choose a Class</option>
+                                <option value="ac">AC</option>
+                                <option value="snigdha">SNIGDHA</option>
+                                <option value="s_chair">S_CHAIR</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <input type="submit" value="Submit" class="btn btn-primary mt-5 w-100">
+            </form>
+            <img src="./assets/banner-1.jpg" alt="home-banner">
+        </div>
+        <div id="demo">
+            <div>
+                <img src="./assets/search.svg" alt="search">
+                <div>
+                    <h3>Search</h3>
+                    <p>Choose your origin, destination, journey dates and search for trains</p>
+                </div>
+            </div>
+
+            <div>
+                <img src="./assets/select.svg" alt="select">
+                <div>
+                    <h3>Select</h3>
+                    <p>Select your desired trip and choose your seats</p>
+                </div>
+            </div>
+
+            <div>
+                <img src="./assets/pay.svg" alt="pay">
+                <div>
+                    <h3>Pay</h3>
+                    <p>Pay for the tickets via Bkash/Nagad</p>
+                </div>
+            </div>
+
+        </div>
+        <div id="instruction">
+            <div>
+                <img src="./assets/instruction-seciton-image.png" alt="instruction">
+            </div>
+            <div>
+                <ul>
+                    <li>Tickets can be bought online five days in advance.</li>
+                    <li>You can pay for the tickets using mobile financial services: bKash, Nagad</li>
+                    <li>In case of payment or transaction failure, the deducted amount would be refunded by your bank or
+                        MFS provider within 8 business days.</li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div>
+            <h3>
+                Bangladesh Railway
+            </h3>
+        </div>
+        <div>
+            <a href="#">Terms and Conditions</a>|
+            <a href="#">Privacy Policy</a>
+        </div>
+        <div>
+            <h3>Powered by Team x</h3>
+        </div>
+    </div>
+</body>
+
+</html>

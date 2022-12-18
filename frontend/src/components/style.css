@@ -1,0 +1,123 @@
+.search {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.inputs-container {
+    display: flex;
+    gap: 20px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+#demo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#demo img {
+    width: 180px;
+}
+
+#demo p {
+    font-size: 14px;
+    letter-spacing: 0.25px;
+    line-height: 24px;
+}
+
+#instruction {
+    display: flex;
+    justify-content: space-between;
+}
+
+#instruction ul {
+    flex: 40%;
+}
+
+#footer {
+    background-color: #F6F9FF;
+    border-top: 3px solid green;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px;
+    margin-top: 100px;
+}
+
+/* Register page */
+.register-form {
+    border-radius: 10px;
+    margin-top: 100px;
+    background: #4e54c8;
+    background: -webkit-linear-gradient(to right, #8f94fb, #4e54c8);
+    background: linear-gradient(to right, #8f94fb, #4e54c8);
+}
+
+.register-form input {
+    padding: 10px;
+    margin: 8px;
+}
+
+.register-form select {
+    width: 260px;
+    padding: 10px;
+}
+
+/* Login page */
+.login {
+    display: flex;
+    justify-content: space-between;
+}
+
+.login img {
+    z-index: -1;
+    width: 400px;
+}
+
+.login form {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 15px;
+    gap: 10px;
+    border-radius: 10px;
+    background: #4e54c8;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #8f94fb, #4e54c8);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #8f94fb, #4e54c8);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.login form input {
+    border-radius: 8px;
+    border: none;
+    background-color: #E8F0FE;
+    padding: 10px;
+}
+
+/* Contact Page */
+.contact {
+    text-align: center;
+    padding: 10px;
+}
+
+.contact table {
+    width: 100%;
+    padding: 10px;
+}
+
+.contact table tr {
+    border-bottom: 1px solid black;
+    padding: 10px;
+}

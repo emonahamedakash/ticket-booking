@@ -1,0 +1,92 @@
+.admin-container{
+    width: 1280px;
+    margin: 0 auto;
+
+}
+.admin-container h1{
+    text-align: center;
+    background-color: teal;
+    color: white;
+    padding: 10px 15px;
+}
+.admin-container .admin-navigation{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.admin-container .admin-body{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.admin-container .admin-body .admin-navigation{
+    flex: 10%;
+}
+.admin-container .admin-body .admin-component{
+    flex: 75%;
+}
+/* Dashboard */
+.dashboard{
+    width: 100%;
+}
+/* Trains page */
+.trains {
+    width: 90%;
+}
+.admin-table td{
+    border-bottom: 1px solid gray;
+}
+.train-card{
+    display: flex;
+    height: 80px;
+    width: 80%;
+    margin: 10px auto;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    border-radius: 10px;
+}
+.train-card p{
+    font-size: 25px;
+}
+
+/* Add Train Page */
+.add-train-form {
+    border-radius: 10px;
+    width: 70%;
+    background: #4e54c8;
+    background: -webkit-linear-gradient(to right, #8f94fb, #4e54c8);
+    background: linear-gradient(to right, #8f94fb, #4e54c8);
+}
+
+.add-train-form input {
+    padding: 10px;
+    margin: 8px;
+}
+
+/* Users page */
+.users{
+    width: 100%;
+}
+
+.user-card{
+    display: flex;
+    height: 80px;
+    width: 80%;
+    margin: 10px auto;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    border-radius: 10px;
+}
+.user-card p{
+    font-size: 25px;
+}
+
+
+
+/* utility */
+.sub-heading{
+    text-align: center;
+    width: 100%;
+}
