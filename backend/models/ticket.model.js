@@ -17,6 +17,10 @@ const ticketSchema = new mongoose.Schema({
     type: Number,
     required: true,
   },
+  total_price: {
+    type: Number,
+  },
+
   buyer_email: {
     type: String,
     required: true,

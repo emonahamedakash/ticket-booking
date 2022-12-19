@@ -60,9 +60,6 @@ const Login = () => {
           <a href="/register" style={{ color: "white" }}>
             Register here
           </a>
-          <a href="/admin" style={{ color: "white" }}>
-            Admin Panel
-          </a>
         </form>
         <img src={LoginBanner} alt="login" />
       </div>

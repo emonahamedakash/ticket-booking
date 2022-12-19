@@ -138,10 +138,8 @@ const Home = () => {
           <img src={Search} alt="search" />
           <div>
             <h3>Search</h3>
-            <p>
-              Choose your origin, destination, journey dates and search for
-              trains
-            </p>
+            <p>Choose your origin, destination,</p>
+            <p>journey dates and search for trains</p>
           </div>
         </div>
 
@@ -149,15 +147,16 @@ const Home = () => {
           <img src={Select} alt="select" />
           <div>
             <h3>Select</h3>
-            <p>Select your desired trip and choose your seats</p>
+            <p>Select your desired trip</p>
           </div>
         </div>
 
         <div>
           <img src={Pay} alt="pay" />
           <div>
-            <h3>Pay</h3>
-            <p>Pay for the tickets via Bkash/Nagad</p>
+            <h3>Collect</h3>
+            <p>Collect Ticket from the counter </p>
+            <p>30 minutes before departure</p>
           </div>
         </div>
       </div>
@@ -168,15 +167,8 @@ const Home = () => {
         <div>
           <ul>
             <li>Tickets can be bought online five days in advance.</li>
-            <li>
-              You can pay for the tickets using mobile financial services:
-              bKash, Nagad
-            </li>
-            <li>
-              In case of payment or transaction failure, the deducted amount
-              would be refunded by your bank or MFS provider within 8 business
-              days.
-            </li>
+            <li>You have to collect the ticket from counter</li>
+            <li>You have to pay cash </li>
           </ul>
         </div>
       </div>

@@ -11,8 +11,8 @@ const Book = () => {
 
   const [no_of_seat, setNumberOfSeat] = useState(0);
   const [passanger_name, setPassangerName] = useState("");
-  const [passanger_moblie, setPassangerMobile] = useState("");
-
+  const [passanger_mobile, setPassangerMobile] = useState("");
+  let total_price = train.ticketPrice * no_of_seat;
   const handleNumberOfSeat = (e) => {
     setNumberOfSeat(e.target.value);
   };
@@ -27,7 +27,7 @@ const Book = () => {
     e.preventDefault();
     const response = await axios
       .post(
-        `http://localhost:5000/api/book/?train_id=${train.id}&date=${date}&no_of_seat=${no_of_seat}&buyer_email=${buyer_email}&passanger_name=${passanger_name}&passanger_mobile=${passanger_moblie}`
+        `http://localhost:5000/api/book/?train_id=${train.id}&date=${date}&no_of_seat=${no_of_seat}&total_price=${total_price}&buyer_email=${buyer_email}&passanger_name=${passanger_name}&passanger_mobile=${passanger_mobile}`
       )
       .then((response) => {
         console.log(response);
@@ -85,9 +85,31 @@ const Book = () => {
           </button>
         </form>
       </div>
-      <div className="ticketInfo">
+      <div
+        className="ticketInfo w-50 p-4 mt-4"
+        style={{
+          border: "3px solid black",
+          borderRadius: "10px",
+          color: "green",
+        }}
+      >
         <h4 className="text-center">Train: {train.name}</h4>
-        <h4>Passanger Name: {passanger_name}</h4>
+        <div className="d-flex justify-content-evenly">
+          <p>Passanger Name: {passanger_name}</p>
+          <p>Journey Date: {date}</p>
+        </div>
+        <p style={{ textAlign: "center" }}>
+          Passanger Mobile: {passanger_mobile}
+        </p>
+        <div className="d-flex justify-content-evenly">
+          <p>Number of Seats: </p>
+          <p>{no_of_seat}</p>
+        </div>
+        <hr />
+        <div className="d-flex justify-content-evenly">
+          <p>Total Price:</p>
+          <p>{total_price}</p>
+        </div>
       </div>
     </div>
   );

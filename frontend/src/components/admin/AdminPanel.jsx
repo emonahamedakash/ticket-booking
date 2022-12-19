@@ -1,25 +1,16 @@
 import React, { useState } from "react";
-import Dashboard from "./Dashboard";
 import Trains from "./Trains";
 import AddTrain from "./AddTrain";
 import Users from "./Users";
 import "./admin.css";
 
 const AdminPanel = () => {
-  const [comp, setComp] = useState(<Dashboard />);
+  const [comp, setComp] = useState(<Trains />);
   return (
     <div className="admin-container">
       <h1>Easy Booking Admin Panel</h1>
       <div className="admin-body">
         <div className="admin-navigation">
-          <button
-            className="btn btn-primary"
-            onClick={() => {
-              setComp(<Dashboard />);
-            }}
-          >
-            Dashboard
-          </button>
           <button
             className="btn btn-primary"
             onClick={() => {
