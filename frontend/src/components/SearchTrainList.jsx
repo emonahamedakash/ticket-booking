@@ -2,7 +2,8 @@ import React from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 const SearchTrainList = () => {
   const { state } = useLocation();
-  const { trains, date, seatClass } = state;
+  const { trains, date } = state;
+
   const navigate = useNavigate();
   console.log(trains);
   return (
@@ -19,7 +20,7 @@ const SearchTrainList = () => {
           <b>Route:</b> {trains[0].from} To {trains[0].to}
         </h5>
         <p>
-          <b>Date:</b> {date} & <b>Class:</b> {seatClass}
+          <b>Date:</b> {date}
         </p>
       </div>
       <table className="table table-hover m-10">
@@ -45,8 +46,11 @@ const SearchTrainList = () => {
                     className="btn btn-primary"
                     onClick={() => {
                       console.log(train);
-                      navigate("/search/trains/selectseat", {
-                        state: { train: train },
+                      navigate("/search/trains/book", {
+                        state: {
+                          train: train,
+                          date: date,
+                        },
                       });
                     }}
                   >

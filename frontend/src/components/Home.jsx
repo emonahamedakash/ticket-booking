@@ -13,7 +13,6 @@ const Home = () => {
   const [to, setTo] = useState("");
   const [date, setDate] = useState("");
   const [seatClass, setSeatClass] = useState("");
-
   const navigate = useNavigate();
 
   const handleFrom = (e) => {
@@ -57,12 +56,6 @@ const Home = () => {
               <div className="input-field">
                 <label>From</label>
                 <br />
-                {/* <input
-                  type="text"
-                  name="from"
-                  value={from}
-               
-                /> */}
                 <select
                   className="p-2 w-100"
                   defaultValue="choose"
@@ -86,6 +79,8 @@ const Home = () => {
                 <input
                   type="date"
                   value={date}
+                  min="2022-12-19"
+                  max="2022-12-23"
                   onChange={handleDate}
                   className="w-100 p-1"
                   placeholder="Pick Date"
@@ -96,7 +91,6 @@ const Home = () => {
               <div className="input-field">
                 <label>To</label>
                 <br />
-                {/* <input type="text" name="to" value={to} } /> */}
                 <select
                   className="p-2 w-100"
                   defaultValue="choose"
@@ -113,7 +107,7 @@ const Home = () => {
                   <option>Sylhet</option>
                 </select>
               </div>
-              <div className="input-field">
+              {/* <div className="input-field">
                 <label>Choose Class</label>
                 <br />
                 <select
@@ -128,7 +122,7 @@ const Home = () => {
                   <option value="Snigdha">SNIGDHA</option>
                   <option value="S_Chair">S_CHAIR</option>
                 </select>
-              </div>
+              </div> */}
             </div>
           </div>
           <input

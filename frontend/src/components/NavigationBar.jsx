@@ -5,6 +5,7 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import Logo from "../assets/logo.png";
 
 function NavigationBar() {
+  let userMail = sessionStorage.getItem("email");
   return (
     <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
       <Container>
@@ -16,10 +17,18 @@ function NavigationBar() {
             <Nav.Link href="/contact">Contact Us</Nav.Link>
           </Nav>
           <Nav>
-            <Nav.Link href="/login">Login</Nav.Link>
-            <Nav.Link eventKey={2} href="/register">
-              Register
-            </Nav.Link>
+            {userMail ? (
+              <p>
+                Hello👋<b>{userMail}</b>
+              </p>
+            ) : (
+              <>
+                <Nav.Link eventKey={2} href="/register">
+                  Register
+                </Nav.Link>
+                <Nav.Link href="/login">Login</Nav.Link>
+              </>
+            )}
           </Nav>
         </Navbar.Collapse>
       </Container>

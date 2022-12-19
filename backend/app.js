@@ -6,6 +6,7 @@ const mongoose = require("mongoose");
 
 const userRoute = require("./routes/user.route.js");
 const trainRoute = require("./routes/train.route.js");
+const ticketRoute = require("./routes/ticket.route.js");
 
 const app = express();
 
@@ -19,14 +20,16 @@ mongoose.connect(mongodbUri, (err) => {
     console.log("Connected to Database...");
   }
 });
-
+//middleWares
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+app.use(express.json());
 app.get("/", (req, res) => {
   res.sendFile(__dirname + "/views/home.html");
 });
 app.use("/api/", userRoute);
 app.use("/api/", trainRoute);
+app.use("/api/", ticketRoute);
 
 module.exports = app;

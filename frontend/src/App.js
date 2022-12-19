@@ -8,7 +8,7 @@ import NavigationBar from "./components/NavigationBar";
 import Trains from "./components/admin/Trains";
 import Login from "./components/Login";
 import Register from "./components/Register";
-import SelectSeat from "./components/SelectSeat";
+import Book from "./components/Book";
 //Admin Components import
 import AddTrain from "./components/admin/AddTrain";
 import AdminPanel from "./components/admin/AdminPanel";
@@ -24,7 +24,7 @@ const App = () => {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/search/trains" element={<SearchTrainList />} />
-        <Route path="/search/trains/selectseat" element={<SelectSeat />} />
+        <Route path="/search/trains/book" element={<Book />} />
         //Admin Routes
         <Route path="/admin" element={<AdminPanel />} />
         <Route path="/admin/trains" element={<Trains />} />

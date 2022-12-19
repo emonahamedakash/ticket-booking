@@ -6,14 +6,26 @@ const ticketSchema = new mongoose.Schema({
     required: true,
   },
   train_id: {
+    type: Number,
+    required: true,
+  },
+  date: {
     type: String,
     required: true,
   },
-  journey_date: {
-    type: Date,
+  no_of_seat: {
+    type: Number,
     required: true,
   },
-  buyer_name: {
+  buyer_email: {
+    type: String,
+    required: true,
+  },
+  passanger_name: {
+    type: String,
+    required: true,
+  },
+  passanger_mobile: {
     type: String,
     required: true,
   },

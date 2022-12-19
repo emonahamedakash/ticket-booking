@@ -11,7 +11,7 @@ const Footer = () => {
         <a href="#">Terms and Conditions</a>|<a href="#">Privacy Policy</a>
       </div>
       <div>
-        <h3>Powered by Team x</h3>
+        <h3>Powered by Team 9</h3>
       </div>
     </div>
   );
